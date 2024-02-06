@@ -2,7 +2,7 @@
 
 name: CI
 
-# Control when the workflow will run
+# Controlwhen the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for "main" branch
   push:
