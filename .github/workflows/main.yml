@@ -44,7 +44,7 @@ jobs:
       - name: Copy files to the test website with the AWS CLI
         run: |
           ls -l
-          aws s3 sync test.txt s3://testaction02
+          aws s3 sync .settings s3://testaction02
         
       - name: Run a multi-line script
         run: |
