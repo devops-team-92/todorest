@@ -30,6 +30,7 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::164239620310:role/github-action
+          aws-region: us-east-2
           
       - name: List objects in S3 bucket
         run: aws s3 ls
