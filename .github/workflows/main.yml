@@ -41,6 +41,9 @@ jobs:
       - name: get caller identity2
         run: |
           aws sts get-caller-identity
+      - name: Copy files to the test website with the AWS CLI
+        run: |
+          aws s3 sync test.txt s3://testaction02
         
       - name: Run a multi-line script
         run: |
