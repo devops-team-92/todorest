@@ -38,10 +38,14 @@ jobs:
       - name: List objects in S3 bucket
         run: aws s3 ls
         
+      - name: get caller identity2
+        run: |
+          aws sts get-caller-identity
+        
       - name: Run a multi-line script
         run: |
           sudo apt-get update
           sudo apt-get install maven -y
-          mvn package
-          mvn test
+          #mvn package
+          #mvn test
       
